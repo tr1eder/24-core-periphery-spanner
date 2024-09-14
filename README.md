@@ -1,4 +1,4 @@
-# spanner - 2
+# spanner - 4
 AAPSP - finding efficient and provably well-approximating spanner using a core-periphery decomposition
 
 
