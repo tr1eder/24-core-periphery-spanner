@@ -1,11 +1,11 @@
 *.txt
 
 # Build directory
-parlaylib/build*
+# parlaylib/build*
 
 # IDE settings
-parlaylib/.idea/
-parlaylib/CMakeSettings.json
+# parlaylib/.idea/
+# parlaylib/CMakeSettings.json
 *.swp
 
 # Prerequisites
