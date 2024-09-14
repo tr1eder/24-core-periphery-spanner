@@ -25,4 +25,3 @@ If you are interested in contributing to Parlay, the following pages describe us
 * [Static analysis](./analysis/README.md)
 * [Unit tests](./test/README.md)
 * [Benchmarks](./benchmark/README.md)
-
