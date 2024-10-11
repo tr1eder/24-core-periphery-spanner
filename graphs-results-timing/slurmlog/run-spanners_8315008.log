@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-Epinions1.txt
+### Threads: 192
+### n: 75888
+### m: 811480
+### Params: -k = 4 => \beta = \log n/2k = 1.40463
+### ------------------------------------
+Spanner size = 85016
+### Running Time: 3.33053
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-Epinions1.txt
+### Threads: 192
+### n: 75888
+### m: 811480
+### Params: -k = 4 => \beta = \log n/2k = 1.40463
+### ------------------------------------
+Spanner size = 85016
+### Running Time: 5.21741
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-Epinions1.txt
+### Threads: 192
+### n: 75888
+### m: 811480
+### Params: -k = 4 => \beta = \log n/2k = 1.40463
+### ------------------------------------
+Spanner size = 85016
+### Running Time: 4.00064
+### ------------------------------------
+# time per iter: 4.18286

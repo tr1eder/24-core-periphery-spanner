@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+tree edges 2689380intercluster 7079241total edges = 9768621
+### Running Time: 174.591
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+tree edges 2689380intercluster 7066649total edges = 9756029
+### Running Time: 178.671
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+tree edges 2689380intercluster 7066471total edges = 9755851
+### Running Time: 162.764
+### ------------------------------------
+# time per iter: 172.008

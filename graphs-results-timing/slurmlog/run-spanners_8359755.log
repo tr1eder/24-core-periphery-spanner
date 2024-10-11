@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/orkut.txt
+### Threads: 128
+### n: 3072441
+### m: 234370166
+### Params: -k = 4 => \beta = \log n/2k = 1.86725
+### ------------------------------------
+Spanner size = 6606742
+### Running Time: 25.1343
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/orkut.txt
+### Threads: 128
+### n: 3072441
+### m: 234370166
+### Params: -k = 4 => \beta = \log n/2k = 1.86725
+### ------------------------------------
+Spanner size = 6641522
+### Running Time: 25.8596
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/orkut.txt
+### Threads: 128
+### n: 3072441
+### m: 234370166
+### Params: -k = 4 => \beta = \log n/2k = 1.86725
+### ------------------------------------
+Spanner size = 6749857
+### Running Time: 25.892
+### ------------------------------------
+# time per iter: 25.6287

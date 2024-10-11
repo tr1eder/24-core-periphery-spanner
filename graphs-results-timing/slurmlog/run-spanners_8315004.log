@@ -1,0 +1,34 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/Slashdot.txt
+### Threads: 192
+### n: 82168
+### m: 1008460
+### Params: -k = 4 => \beta = \log n/2k = 1.41457
+### ------------------------------------
+Value of k 4 p 0.940936 
+ Total Edges 236916
+### Running Time: 4.68989
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/Slashdot.txt
+### Threads: 192
+### n: 82168
+### m: 1008460
+### Params: -k = 4 => \beta = \log n/2k = 1.41457
+### ------------------------------------
+Value of k 4 p 0.940936 
+ Total Edges 295798
+### Running Time: 6.16156
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/Slashdot.txt
+### Threads: 192
+### n: 82168
+### m: 1008460
+### Params: -k = 4 => \beta = \log n/2k = 1.41457
+### ------------------------------------
+Value of k 4 p 0.940936 
+ Total Edges 295798
+### Running Time: 6.69502
+### ------------------------------------
+# time per iter: 5.84882

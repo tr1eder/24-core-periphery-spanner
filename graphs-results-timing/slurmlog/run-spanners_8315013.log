@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-hamsterster.txt
+### Threads: 192
+### n: 2427
+### m: 33262
+### Params: -k = 4 => \beta = \log n/2k = 0.974301
+### ------------------------------------
+tree edges 2016intercluster 666total edges = 2682
+### Running Time: 0.003801
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-hamsterster.txt
+### Threads: 192
+### n: 2427
+### m: 33262
+### Params: -k = 4 => \beta = \log n/2k = 0.974301
+### ------------------------------------
+tree edges 2016intercluster 666total edges = 2682
+### Running Time: 0.042102
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/soc-hamsterster.txt
+### Threads: 192
+### n: 2427
+### m: 33262
+### Params: -k = 4 => \beta = \log n/2k = 0.974301
+### ------------------------------------
+tree edges 2016intercluster 666total edges = 2682
+### Running Time: 0.944443
+### ------------------------------------
+# time per iter: 0.330115

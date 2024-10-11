@@ -48,6 +48,7 @@ bazel run benchmarks/Spanner/FGV_Baseline:Spanner_main -- -s ~/spanner/graphs-sa
 ```
 
 ### RUN - convert from snap to gbbs format (bash_convert-to-gbbs.sh)
+_run this file to convert all graphs directly (synchronous)_
 ```powershell
 #!/bin/bash
 cd ~/spanner/gbbs
@@ -61,6 +62,7 @@ done
 ```
 
 ### RUN - run spanner algs (bash_run-spanners.sh)
+_run this file to run all graph benchmarks directly (synchronous)_
 ```powershell
 #!/bin/bash
 cd ~/spanner/gbbs
@@ -74,6 +76,7 @@ done
 ```
 
 ### RUN (slurm_convert-to-gbbs.sh)
+_run this file to convert all graphs using slurm (asynchronous & in parallel)_
 ```powershell
 #!/bin/bash
 snapfolder=~/spanner/graphs-sanitized-snap
@@ -83,6 +86,7 @@ done
 ```
 
 ### RUN (slurm_single-convert-to-gbbs.slurm)
+_helper to convert a single graph_
 ```powershell
 #!/bin/bash
 #SBATCH --job-name=convert-to-gbbs_%j.slurm                 # Job name
@@ -100,6 +104,7 @@ bazel --output_base=~/spanner/tmp/bazel_out_$SLURM_JOB_ID run //utils:snap_conve
 ```
 
 ### RUN (slurm_run-spanners.sh)
+_run this file to run all graph benchmarks using slurm (asynchronous & in parallel)_
 ```powershell
 #!/bin/bash
 gbbsfolder=~/spanner/graphs-sanitized-gbbs
@@ -111,6 +116,7 @@ done
 ``` 
 
 ### RUN (slurm_single-run-spanners.slurm)
+_helper to run run a single graph through a single benchmark_
 ```powershell
 #!/bin/bash
 #SBATCH --job-name=run-spanners_%j.slurm       # Job name
@@ -124,3 +130,11 @@ file=$1
 spannerversion=$2
 bazel --output_base=~/spanner/tmp/bazel_out_$SLURM_JOB_ID run benchmarks/Spanner/$spannerversion:Spanner_main -- -s "$file"
 ```
+
+### COPY RESULTS BACK
+```
+scp -r timrieder@euler.ethz.ch:~/spanner/slurmlog/ ./spanner/graphs-results-timing
+scp -r timrieder@euler.ethz.ch:~/spanner/graphs-results/orkut_spanner_MPVX* ./spanner/graphs-results
+```
+
+### EXTRACT TIMING INFORMATION (extractTimingInformation.py)

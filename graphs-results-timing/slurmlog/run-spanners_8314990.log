@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/euemail-cleaned.txt
+### Threads: 192
+### n: 1005
+### m: 32128
+### Params: -k = 4 => \beta = \log n/2k = 0.864093
+### ------------------------------------
+Spanner size = 986
+### Running Time: 0.0002
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/euemail-cleaned.txt
+### Threads: 192
+### n: 1005
+### m: 32128
+### Params: -k = 4 => \beta = \log n/2k = 0.864093
+### ------------------------------------
+Spanner size = 986
+### Running Time: 0.000167
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/euemail-cleaned.txt
+### Threads: 192
+### n: 1005
+### m: 32128
+### Params: -k = 4 => \beta = \log n/2k = 0.864093
+### ------------------------------------
+Spanner size = 986
+### Running Time: 0.000159
+### ------------------------------------
+# time per iter: 0.000175333

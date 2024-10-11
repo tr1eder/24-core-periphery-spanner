@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/caAstroPh.txt
+### Threads: 192
+### n: 18771
+### m: 396100
+### Params: -k = 4 => \beta = \log n/2k = 1.23001
+### ------------------------------------
+tree edges 16401intercluster 19856total edges = 36257
+### Running Time: 13.1667
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/caAstroPh.txt
+### Threads: 192
+### n: 18771
+### m: 396100
+### Params: -k = 4 => \beta = \log n/2k = 1.23001
+### ------------------------------------
+tree edges 16401intercluster 19550total edges = 35951
+### Running Time: 14.1017
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/caAstroPh.txt
+### Threads: 192
+### n: 18771
+### m: 396100
+### Params: -k = 4 => \beta = \log n/2k = 1.23001
+### ------------------------------------
+tree edges 16401intercluster 19856total edges = 36257
+### Running Time: 11.5207
+### ------------------------------------
+# time per iter: 12.9297

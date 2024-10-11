@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/skitter.txt
+### Threads: 192
+### n: 1696415
+### m: 22190596
+### Params: -k = 4 => \beta = \log n/2k = 1.793
+### ------------------------------------
+tree edges 1357819intercluster 1495794total edges = 2853613
+### Running Time: 149.193
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/skitter.txt
+### Threads: 192
+### n: 1696415
+### m: 22190596
+### Params: -k = 4 => \beta = \log n/2k = 1.793
+### ------------------------------------
+tree edges 1357819intercluster 1546348total edges = 2904167
+### Running Time: 145.684
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/skitter.txt
+### Threads: 192
+### n: 1696415
+### m: 22190596
+### Params: -k = 4 => \beta = \log n/2k = 1.793
+### ------------------------------------
+tree edges 1357819intercluster 1495175total edges = 2852994
+### Running Time: 144.709
+### ------------------------------------
+# time per iter: 146.529

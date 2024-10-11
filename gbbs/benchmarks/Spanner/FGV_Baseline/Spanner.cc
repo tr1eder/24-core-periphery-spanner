@@ -70,6 +70,7 @@ double Spanner_runner(Graph& G, commandLine P) {
   assert(P.getOption("-s"));
   timer t;
   t.start();
+  t.sto
   auto spanner = spanner::Spanner(G, beta,k);
   double tt = t.stop();
   std::cout << "### Running Time: " << tt << std::endl;

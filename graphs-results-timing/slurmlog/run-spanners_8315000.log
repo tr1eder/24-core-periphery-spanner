@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/pokec.txt
+### Threads: 192
+### n: 1632803
+### m: 44603928
+### Params: -k = 4 => \beta = \log n/2k = 1.78823
+### ------------------------------------
+tree edges 1390815intercluster 8509057total edges = 9899872
+### Running Time: 141.932
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/pokec.txt
+### Threads: 192
+### n: 1632803
+### m: 44603928
+### Params: -k = 4 => \beta = \log n/2k = 1.78823
+### ------------------------------------
+tree edges 1390815intercluster 8530794total edges = 9921609
+### Running Time: 138.839
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/pokec.txt
+### Threads: 192
+### n: 1632803
+### m: 44603928
+### Params: -k = 4 => \beta = \log n/2k = 1.78823
+### ------------------------------------
+tree edges 1390815intercluster 8521958total edges = 9912773
+### Running Time: 139.011
+### ------------------------------------
+# time per iter: 139.927

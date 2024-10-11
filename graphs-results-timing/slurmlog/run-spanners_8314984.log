@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+Spanner size = 9052943
+### Running Time: 25.8937
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+Spanner size = 8979523
+### Running Time: 25.9516
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/cit-Patents.txt
+### Threads: 192
+### n: 3774768
+### m: 33037894
+### Params: -k = 4 => \beta = \log n/2k = 1.89298
+### ------------------------------------
+Spanner size = 8983006
+### Running Time: 26.1766
+### ------------------------------------
+# time per iter: 26.0073
