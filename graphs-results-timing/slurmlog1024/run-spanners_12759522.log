@@ -1,0 +1,34 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/sinaweibo.txt
+### Threads: 192
+### n: 58655849
+### m: 522642066
+### Params: -k = 4 => \beta = \log n/2k = 2.2359
+### ------------------------------------
+Value of k 4 p 0.988573 
+ Total Edges 218999395
+### Running Time: 80.1374
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/sinaweibo.txt
+### Threads: 192
+### n: 58655849
+### m: 522642066
+### Params: -k = 4 => \beta = \log n/2k = 2.2359
+### ------------------------------------
+Value of k 4 p 0.988573 
+ Total Edges 218837348
+### Running Time: 76.5657
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/sinaweibo.txt
+### Threads: 192
+### n: 58655849
+### m: 522642066
+### Params: -k = 4 => \beta = \log n/2k = 2.2359
+### ------------------------------------
+Value of k 4 p 0.988573 
+ Total Edges 222005319
+### Running Time: 82.9754
+### ------------------------------------
+# time per iter: 79.8929

@@ -1,0 +1,34 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+Value of k 4 p 0.968901 
+ Total Edges 8183169
+### Running Time: 20.5809
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+Value of k 4 p 0.968901 
+ Total Edges 7080422
+### Running Time: 21.6036
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+Value of k 4 p 0.968901 
+ Total Edges 6996372
+### Running Time: 22.5341
+### ------------------------------------
+# time per iter: 21.5729

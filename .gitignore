@@ -1,4 +1,5 @@
 *.txt
+*.edges
 tests.*
 
 # Build directory

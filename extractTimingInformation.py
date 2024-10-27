@@ -10,11 +10,7 @@ class SpannerType(Enum):
     FGVbase = "FB"
     MPVXbase = "MB"
     MPVXcompact = "MC"
-hatch = {
-    SpannerType.FGVbase: '|',
-    SpannerType.MPVXbase: '/',
-    SpannerType.MPVXcompact: '\\'
-}
+
 iscloseint = lambda x: abs(x - round(x)) < 1e-5
 
 
@@ -33,6 +29,7 @@ class Spanners:
         if spanner.name not in self.spanners:
             self.spanners[spanner.name] = []
         self.spanners[spanner.name].append(spanner)
+        self.spanners[spanner.name].sort(key=lambda s: s.type.value)
 
     def plot(self):
         def forward(x: float|np.ndarray) -> float|np.ndarray:
@@ -90,7 +87,7 @@ class Spanners:
 
         ax0.set_ylabel('Time (s)')
         ax1.set_ylabel('Spanner Size (%)')
-        ax0.set_ylim(0,220)
+        ax0.set_ylim(0,330)
         ax1.set_ylim(0,53)
         ax1.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f'{y:.0f}%'))
 
@@ -110,7 +107,7 @@ def parseLogTiming(logFile):
         content = f.read()
 
         # Extract filename
-        filename = re.search(r'(?<=### Graph: (/.*))([^/\n]*)(?=.txt\n)', content).group(0)
+        filename = re.search(r'(?<=### Graph: (/.*))([^/\n]*)(?=.(txt|edges)\n)', content).group(0)
         # spannertype = re.search(r'(?<=### Application: (.*))([^ \n]*)(?=\)\n)', content).group(0)
         time = re.search(r'(?<=# time per iter: ).*(?=\n)', content).group(0)
         totalEdges = re.search(r'### m: (\d+)', content).group(1)
@@ -132,12 +129,12 @@ def getFiles(folder='graphs-results-timing/slurmlog/'):
 
 
 def main():
-    files = getFiles()
+    files = getFiles('graphs-results-timing/slurmlog1010/') + getFiles('graphs-results-timing/slurmlog1024/')
     spanners = Spanners()
     for file in files:
         name, spannertype, time, totalEdges, spannerEdges = parseLogTiming(file)
 
-        print (name, spannertype, time, totalEdges, spannerEdges)
+        print (f'{name:20}\t{spannertype.name:10}\t{time:10}\t{spannerEdges/totalEdges:15}\t{spannerEdges:10}\t{totalEdges:10}')
         spanners.addSpanner(Spanners.Spanner(name, spannertype, time, totalEdges, spannerEdges))
 
     spanners.plot()

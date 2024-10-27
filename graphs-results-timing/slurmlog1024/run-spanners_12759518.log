@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+tree edges 1016637intercluster 5715574total edges = 6732211
+### Running Time: 159.237
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+tree edges 1016637intercluster 6467186total edges = 7483823
+### Running Time: 165.822
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/graphs-sanitized-gbbs/hollywood.txt
+### Threads: 192
+### n: 1069126
+### m: 112613306
+### Params: -k = 4 => \beta = \log n/2k = 1.73529
+### ------------------------------------
+tree edges 1016637intercluster 6494418total edges = 7511055
+### Running Time: 160.973
+### ------------------------------------
+# time per iter: 162.01
