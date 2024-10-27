@@ -4,7 +4,7 @@
 #SBATCH --error=slurmerr/convert-to-cgraph_%j.err   # Error file
 #SBATCH --ntasks=1                                  # Number of tasks (usually 1 for single commands)
 #SBATCH --time=01:00:00                             # Time limit (e.g., 1 hour)
-#SBATCH --mem-per-cpu=16G                           # Memory requirement
+#SBATCH --mem-per-cpu=128G                           # Memory requirement
 cd ~/wormhole
 file=$1
 date=$2

@@ -6,10 +6,9 @@
 #SBATCH --time=01:00:00                                     # Time limit (e.g., 1 hour)
 #SBATCH --mem-per-cpu=64G                                   # Memory requirement
 cd ~/spanner/gbbs
-snapfolder=~/spanner/graphs-sanitized-snap
-gbbsfolder=~/spanner/graphs-sanitized-gbbs
-filename=$(basename $1)                                     # Get filename from SLURM_ARRAY_TASK_ID
-# sed -i '1s/^/# /' "$snapfolder/$filename"
+snapfolder=$1
+gbbsfolder=$2
+filename=$(basename $3)                                     # Get filename from SLURM_ARRAY_TASK_ID
 tmpfile=$(mktemp)
 ~/spanner/convert_snap-bazel.sh "$snapfolder/$filename" > "$tmpfile"
 bazel --output_base=~/spanner/slurmtmp/bazel_out_$SLURM_JOB_ID run //utils:snap_converter -- -s -i "$tmpfile" -o "$gbbsfolder/$filename"

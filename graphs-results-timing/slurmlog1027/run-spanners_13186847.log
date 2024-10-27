@@ -1,0 +1,31 @@
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/twitterog-sanitized-gbbs//soc-twitter-og.edges
+### Threads: 128
+### n: 41652231
+### m: 2405026092
+### Params: -k = 4 => \beta = \log n/2k = 2.19311
+### ------------------------------------
+Spanner size = 125777744
+### Running Time: 101.365
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/twitterog-sanitized-gbbs//soc-twitter-og.edges
+### Threads: 128
+### n: 41652231
+### m: 2405026092
+### Params: -k = 4 => \beta = \log n/2k = 2.19311
+### ------------------------------------
+Spanner size = 125871609
+### Running Time: 103.782
+### ------------------------------------
+### Application: Spanner (O(k)-spanner from MPXV)
+### Graph: /cluster/home/timrieder/spanner/twitterog-sanitized-gbbs//soc-twitter-og.edges
+### Threads: 128
+### n: 41652231
+### m: 2405026092
+### Params: -k = 4 => \beta = \log n/2k = 2.19311
+### ------------------------------------
+Spanner size = 106815685
+### Running Time: 104.905
+### ------------------------------------
+# time per iter: 103.351

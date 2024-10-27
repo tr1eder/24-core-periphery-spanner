@@ -72,22 +72,25 @@ class Spanners:
             x += len(spanners)
 
 
-        fbmap = np.array([[0.0001,0],[10,20],[200,100]]) # map from values to percentages 
-        fbmaplinlog = np.array(['log', 'lin', 'lin'])
+        maxval = max([spanner.time for spanners in self.spanners.values() for spanner in spanners])
+        # fbmap = np.array([[0.0001,0],[10,20],[600,100]]) # map from values to percentages 
+        # fbmaplinlog = np.array(['log', 'lin', 'lin'])
+        fbmap = np.array([[0,0],[600,100]])
+        fbmaplinlog = np.array(['lin', 'lin'])
         
         ax0.set_yscale('function', functions=(lambda x: np.array([forward(xi) for xi in x]), lambda x: np.array([backward(xi) for xi in x])))
         ax0.set_xticks([]) # remove all xticks
         ax1.set_xticks([]) # remove all xticks
 
-
-        ax0.set_yticks(np.hstack((backward(np.linspace(fbmap[0,1], fbmap[1,1], 6)), np.linspace(fbmap[1,0],fbmap[2,0], 20)[1::2])))
+        # ax0.set_yticks(np.hstack((backward(np.linspace(fbmap[0,1], fbmap[1,1], 6)), np.arange(0,fbmap[2,0]+1, 50)[1::])))
+        ax0.set_yticks(np.arange(0,fbmap[1,0]+1, 50)[::])
         ax0.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f'{y:.0f}s' if iscloseint(y) else f'{y:.0e}s'))
 
         for i in range(-5,3): ax0.axhline(10**i, color='gray', linewidth=.5, linestyle='--', zorder=1, dashes=(2,5))
 
         ax0.set_ylabel('Time (s)')
         ax1.set_ylabel('Spanner Size (%)')
-        ax0.set_ylim(0,330)
+        ax0.set_ylim(0,maxval*1.1)
         ax1.set_ylim(0,53)
         ax1.yaxis.set_major_formatter(FuncFormatter(lambda y, _: f'{y:.0f}%'))
 
@@ -129,7 +132,10 @@ def getFiles(folder='graphs-results-timing/slurmlog/'):
 
 
 def main():
-    files = getFiles('graphs-results-timing/slurmlog1010/') + getFiles('graphs-results-timing/slurmlog1024/')
+    files = (getFiles('graphs-results-timing/slurmlog1010/') 
+           + getFiles('graphs-results-timing/slurmlog1024/')
+           + getFiles('graphs-results-timing/slurmlog1027/'))
+    
     spanners = Spanners()
     for file in files:
         name, spannertype, time, totalEdges, spannerEdges = parseLogTiming(file)

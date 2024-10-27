@@ -10,7 +10,17 @@ fi
 cd ~/spanner/slurmexe
 graphs=$1
 date=$2
+
+# substrings=("twitter2" "hollywood" "sinaweibo")
+substrings=("soc-twitter-og")
+
 for file in $graphs/*; do
-	echo $file;
-	sbatch slurm_single-run-distance-sampling.slurm "$file" "$date"
+    # Check if the filename contains any of the specified substrings
+    for substring in "${substrings[@]}"; do
+        if [[ "$file" == *"$substring"* ]]; then
+            echo "$file"
+            sbatch slurm_single-run-distance-sampling.slurm "$file" "$date"
+            break  # Exit the inner loop once a match is found
+        fi
+    done
 done
