@@ -1,7 +1,7 @@
 #!/bin/bash
 # RUN - convert from snap to gbbs format
 cd ~/spanner/gbbs
-snapfolder=~/spanner/graphs-sanitized-snap
+snapfolder=~/spanner/graphs-removed-spanner
 gbbsfolder=~/spanner/graphs-sanitized-gbbs
 for file in "$snapfolder"/*; do     
 	filename=$(basename "$file");  
