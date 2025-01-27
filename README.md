@@ -1,6 +1,13 @@
 # spanner
 AAPSP - finding efficient and provably well-approximating spanner using a core-periphery decomposition
 
+### License
+This repository is licensed under the MIT License. However, the following subfolders contain code that is independently licensed:
+
+- **GBBS** (Graph Based Benchmark Suite) - [Original Repo URL](https://github.com/paralg/gbbs/)
+- **ParlayLib** (A Toolkit for Programming Parallel Algorithms on Shared-Memory Multicore Machines) - [Original Repo URL](https://github.com/cmuparlay/parlaylib)
+
+Please refer to the respective `LICENSE` files for details.
 
 ### Install BAZEL - on EULER
 ```powershell
