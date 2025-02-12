@@ -1,6 +1,7 @@
 *.txt
 *.edges
 tests.*
+slurmtmp
 
 # Build directory
 # parlaylib/build*
